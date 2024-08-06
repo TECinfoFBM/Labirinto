@@ -74,7 +74,7 @@ document.addEventListener('keydown', function (event) {
     }
     personagem.style.left = `${posX}px`;
     personagem.style.top = `${posY}px`;
-    if(checkColisao(".bloqueio")){
+    /*if(checkColisao(".bloqueio")){
         posX = beforeX;
         posY = beforeY;
         personagem.style.left = `${posX}px`;
@@ -83,7 +83,11 @@ document.addEventListener('keydown', function (event) {
     }else{
         beforeX = posX;
         beforeY = posY;    
+    }*/
+    if(checkColisao(".bloqueio")){
+        posInicial();    
     }
+    
 });
 
 
