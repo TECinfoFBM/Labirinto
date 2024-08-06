@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tela{
+    background-color: aqua;
+}
+#tela1{
+    min-height:100vh;
+    background-color: aqua;
+    width: 800px;
+}
+
+#tela .linha{
+    display: flex;
+    flex-direction: row;
+}
+#tela .linha .celula{
+    width: 60px;
+    height: 60px;
+}
+
+#tela .linha .bloqueio{
+    background-color: red;
+}
+
+#tela .linha .final{
+    background-color: green;
+}
+
+#tela .linha #inicio{
+    background-color: pink;
+}
+
+#personagem{
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    position: absolute;
+}
